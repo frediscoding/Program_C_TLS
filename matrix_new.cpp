@@ -71,7 +71,7 @@ int main(){
 	case '*': // perkalian matriks menggunakan dot product
 
 	// deklarasi matriks C sementara untuk menampung hasil kali matriks A dan B
-    for(int i = 1; i <= k; i++){
+    	for(int i = 1; i <= k; i++){
 		for(int j = 1; j <= k; j++){
 			matriksC[i][j] = 0;
 		}
