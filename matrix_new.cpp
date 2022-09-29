@@ -9,19 +9,19 @@ int main(){
 	cout << "This is a simple calculator for (square) matrices. \nUsed with great knowledge of linear algebra and you'd probably invent new math lol" << endl;
 
 	cout << "Insert matrix size (k x k): "; 
-    cin >> k;
+    	cin >> k;
 
 	// untuk mengisi elemen di matriks A, dimulai dari elemen a11 menggunakan perulangan
-    cout << "Insert matrix A (default) elements: " << endl;			
+    	cout << "Insert matrix A (default) elements: " << endl;			
 	for(int i = 1; i <= k; i++){
 		for(int j = 1; j <= k; j++){
-            cout << "Enter a value for a" << i << j << endl;
+        cout << "Enter a value for a" << i << j << endl;
 			cin >> matriksA[i][j];
 		}
 	}
 	// display matriks A untuk meyakinkan user
-    cout << "Your matrix A is: " << endl;
-    for(int i = 1; i <= k; i++){
+    	cout << "Your matrix A is: " << endl;
+    	for(int i = 1; i <= k; i++){
 		for(int j = 1; j <= k; j++){
 			cout <<  matriksA[i][j] << " ";
 		}
@@ -38,8 +38,8 @@ int main(){
 	}
 
 	// display matriks B
-    cout << "Your matrix B is: " << endl;
-    for(int i = 1; i <= k; i++){
+	cout << "Your matrix B is: " << endl;
+    	for(int i = 1; i <= k; i++){
 		for(int j = 1; j <= k; j++){
 			cout << matriksB[i][j] << " ";
 		}
@@ -115,10 +115,10 @@ int main(){
 			for(int j = 1; j <= k; j++){
 				if(i != j && i < j){ // i < j memastikan bahwa yg dieliminasi adalah elemen di bawah diagonal, hence the mame upper triangular
 					l = matriksA[j][i]/matriksA[i][i];
-                    for(int n = 1; n <= k; n++){
-                        matriksA[j][n] = matriksA[j][n] - l*matriksA[i][n];
-                    }
-				} 
+                    		for(int n = 1; n <= k; n++){
+                  		      matriksA[j][n] = matriksA[j][n] - l*matriksA[i][n];
+                   			 }
+				   }	 
 				}
 			}
 
